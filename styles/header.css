@@ -68,3 +68,20 @@ a#login {display: none;}
     font-family: var(--fonte-base);
     width: 100%;
 }
+
+@media screen and (min-width: 1024px){
+    .titulo{
+        font-size: 10vw;
+    }
+
+    .pesquisa{
+        width: 60%;
+        padding: 15px;
+        margin: 20px;
+        font-size: 25px;
+    }
+}
+
+
+
+

@@ -24,3 +24,9 @@
 img#whats {display: none;}
 img#face {display: none;}
 img#insta {display: none;}
+
+@media screen and (min-width: 1024px){
+    
+}
+
+
