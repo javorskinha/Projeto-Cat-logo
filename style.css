@@ -1,3 +1,14 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* configurações globais */
+
+:root {
+    --fonte-itens: "Roboto", serif;
+    --fonte-base: "Montserrat", serif;
+}
+
 /* header */
 
 .cabecalho {
@@ -26,17 +37,27 @@
     color: #61677A;
     background: url("./icons/lupa.png") no-repeat;
     text-align: center;
+    font-family: var(--fonte-base);
 }
 
-.cabecalho-icones {
-    width: 20px;
-    height: 20px;
+.icones {
+    width: 35px;
+    height: 35px;
 }
+
+a#carrinho {display: none;}
+a#login {display: none;}
 
 .cabecalho-sessao {
     display: flex;
     flex-direction: column;
     justify-content: center;
+}
+
+.cabecalho-sessao-acesso {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
 }
 
 .titulo-pesquisa {
@@ -45,12 +66,18 @@
 
 .login-carrinho {
     display: flex;
+    align-items: baseline;
+    font-family: var(--fonte-base);
 }
 .navegacao {
+    display: flex;
     text-shadow: none;
     padding: 5px;
-    justify-content: space-between;
+    justify-content: space-around;
+    font-family: var(--fonte-base);
 }
+
+/* main */
 
 /* banner */
 
@@ -66,38 +93,90 @@
 .catalogo {
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-around;
     margin: 20px;
     background-color: #fff;
-    border-radius: 25px;
+    border-radius: 5px;
 }
 
 .item-catalogo {
-    border-radius: 10px;
+    font-family: var(--fonte-itens);
     margin: 20px;
     text-align: center;
-    width: 120px;
-    height: 170px;
+    width: 130px;
+    height: 190px;
     font-size: 12px;
 }
 
 .item-foto {
-    background-color: #D8D9DA;
+    background-color: #fff;
     width: 110px;
     height: 110px;
-    border-radius: 15px;
 }
 
-header {
-    padding: 10px;
-}
-
-main {
-    
+.add-carrinho {
     background-color: #000;
+    color: #fff;
+    width: 100%;
 }
+
+.carrinho-branco {
+    width: 20px;
+    height: 20px;
+}
+
+/* rodape */
+
+.rodape {
+    display: flex;
+    font-family: var(--fonte-base);
+    font-size: 3.5vw;
+    align-items: center;
+}
+
+.rodape-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.rodape-ancora {
+    padding: 1vw;
+}
+
+img#whats {display: none;}
+img#face {display: none;}
+img#insta {display: none;}
 
 body {
     margin: 8px;
     display: flex;
     flex-wrap: wrap;
 }
+
+header {
+    width: 100vw;
+    padding: 10px;
+}
+
+main {
+    background-color: #000;
+}
+
+h4 {
+    padding: 7px;
+}
+
+a {
+    color: #000; 
+}
+
+a :hover {
+    color: #61677A;
+}
+
+footer {
+    width: 100vw;
+}
+
+

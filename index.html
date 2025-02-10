@@ -11,21 +11,22 @@
     <header>
         <section class="cabecalho">
             <div class="cabecalho-sessao">
+                <img src="./imagens/line-work-mobile.png" alt="logo line work supply">
                 <h1 class="titulo">Tattoo Supply</h1>
                 <input class="pesquisa" type="search" placeholder="Pesquisa">
             </div>
-            <div class="cabecalho-sessao">
+            <div class="cabecalho-sessao cabecalho-sessao-acesso">
                 <div class="login-carrinho">
-                    <img class="cabecalho-icones" src="./icons/carrinho.png" alt="carrinho de compras">
-                    <a href="#">Carrinho</a>
+                    <img class="icones" src="./icons/carrinho.png" alt="carrinho de compras">
+                    <a href="#" id="carrinho">Carrinho</a>
                 </div>
                 <div class="login-carrinho">
-                    <img class="cabecalho-icones" src="./icons/usuario.png" alt="area de login">
-                    <a href="#">Login</a>
+                    <img class="icones" src="./icons/usuario.png" alt="area de login">
+                    <a href="#" id="login">Login</a>
                 </div>
             </div>
         </section>
-        <section class="cabecalho-navegacao">
+        <section class="cabecalho-sessao">
             <nav class="navegacao">
                 <a href="#">Categorias</a>
                 <a href="#">Novidades</a>
@@ -51,178 +52,160 @@
                             <source media="(min-width: 750px)" srcset="./imagens/steel-filter-m.png" type="image/png">
                             <img src="./imagens/steel-filter-p.png" alt="cartucho steel filter" class="item-foto">
                         </picture>
-                        <h4>CARTUCHOS STEEL FILTER 20 UNIDADES</h4>
-                        <p>R$150,00</p>
-                        <button>adicionar ao carrinho</button>
+                        <h4>CARTUCHOS STEEL FILTER 20 UNIDADES<br><strong>R$150,00</strong></h4>
+                        <button class="add-carrinho"><img src="./icons/carrinho-branco.png" alt="adicionar ao carrinho" class="carrinho-branco"></button>
                     </li>
                     <li class="item-catalogo">
                         <picture>
                             <source media="(min-width: 750px)" srcset="./imagens/big-steel-filter-m.png" type="image/png">
                             <img src="./imagens/big-steel-filter-p.png" alt="cartucho big steel filter" class="item-foto">
                         </picture>
-                        <h4>BIG STEEL FILTER 10 UNIDADE - 45RM</h4>
-                        <p>R$110,00</p>
-                        <button>adicionar ao carrinho</button>
+                        <h4>BIG STEEL FILTER 10 UNIDADE - 45RM<br><strong>R$110,00</strong></h4>
+                        <button class="add-carrinho"><img src="./icons/carrinho-branco.png" alt="adicionar ao carrinho" class="carrinho-branco"></button>
                     </li>
                     <li class="item-catalogo">
                         <picture>
                             <source media="(min-width: 750px)" srcset="./imagens/steel-pro-m.png" type="image/png">
                             <img src="./imagens/steel-pro-p.png" alt="cartucho steel pro" class="item-foto">
                         </picture>
-                        <h4>CARTUCHOS STEEL PRO 20 UNIDADES</h4>
-                        <p>R$170,00</p>
-                        <button>adicionar ao carrinho</button>
+                        <h4>CARTUCHOS STEEL PRO 20 UNIDADES<br><strong>R$170,00</strong></h4>
+                        <button class="add-carrinho"><img src="./icons/carrinho-branco.png" alt="adicionar ao carrinho" class="carrinho-branco"></button>
                     </li>
                     <li class="item-catalogo">
                         <picture>
                             <source media="(min-width: 750px)" srcset="./imagens/steel-dragon-m.png" type="image/png">
                             <img src="./imagens/steel-dragon-p.png" alt="imagem aparelho de barbear" class="item-foto">
                         </picture>
-                        <h4>CARTUCHOS STEEL DRAGON 20 UNIDADES</h4>
-                        <p>R$110,00</p>
-                        <button>adicionar ao carrinho</button>
+                        <h4>CARTUCHOS STEEL DRAGON 20 UNIDADES<br><strong>R$110,00</strong></h4>
+                        <button class="add-carrinho"><img src="./icons/carrinho-branco.png" alt="adicionar ao carrinho" class="carrinho-branco"></button>
                     </li>
                     <li class="item-catalogo">
                         <picture>
                             <source media="(min-width: 750px)" srcset="./imagens/butter-pro-m.png" type="image/png">
                             <img src="./imagens/butter-pro-p.png" alt="manteiga butter pro" class="item-foto">
                         </picture>
-                        <h4>MANTEIGA BUTTER PRO 150 GR</h4>
-                        <p>R$30,00</p>
-                        <button>adicionar ao carrinho</button>
+                        <h4>MANTEIGA BUTTER PRO 150 GR<br><strong>R$30,00</strong></h4>
+                        <button class="add-carrinho"><img src="./icons/carrinho-branco.png" alt="adicionar ao carrinho" class="carrinho-branco"></button>
                     </li>
                     <li class="item-catalogo">
                         <picture>
                             <source media="(min-width: 750px)" srcset="./imagens/protect-pro-filme-m.png" type="image/png">
                             <img src="./imagens/protect-pro-filme-p.png" alt="filme curativo protect pro 5cm por 5m" class="item-foto">
                         </picture>
-                        <h4>PROTECT PRO FILME CURATIVO 5CM X 5M</h4>
-                        <p>R$50,00</p>
-                        <button>adicionar ao carrinho</button>
+                        <h4>PROTECT PRO FILME CURATIVO 5CM X 5M<br><strong>R$50,00</strong></h4>
+                        <button class="add-carrinho"><img src="./icons/carrinho-branco.png" alt="adicionar ao carrinho" class="carrinho-branco"></button>
                     </li>
                     <li class="item-catalogo">
                         <picture>
                             <source media="(min-width: 750px)" srcset="./imagens/transfer-pro-30ml-m.png" type="image/png">
                             <img src="./imagens/transfer-pro-30ml-p.png" alt="transfer pro 30ml" class="item-foto">
                         </picture>
-                        <h4>TRANSFER PRO 30 ML</h4>
-                        <p>R$25,00</p>
-                        <button>adicionar ao carrinho</button>
+                        <h4>TRANSFER PRO 30 ML<br><strong>R$25,00</strong></h4>
+                        <button class="add-carrinho"><img src="./icons/carrinho-branco.png" alt="adicionar ao carrinho" class="carrinho-branco"></button>
                     </li>
                     <li class="item-catalogo">
                         <picture>
                             <source media="(min-width: 750px)" srcset="./imagens/transfer-pro-240gr-m.png" type="image/png">
                             <img src="./imagens/transfer-pro-240gr-p.png" alt="transfer pro 240ml" class="item-foto">
                         </picture>
-                        <h4>TRANSFER PRO 240 ML</h4>
-                        <p>R$45,00</p>
-                        <button>adicionar ao carrinho</button>
+                        <h4>TRANSFER PRO 240 ML<br><strong>R$45,00</strong></h4>
+                        <button class="add-carrinho"><img src="./icons/carrinho-branco.png" alt="adicionar ao carrinho" class="carrinho-branco"></button>
                     </li>
                     <li class="item-catalogo">
                         <picture>
                             <source media="(min-width: 750px)" srcset="./imagens/transfer-pro-2gr-m.png" type="image/png">
                             <img src="./imagens/transfer-pro-2gr-p.png" alt="20 saches transfer pro 2gr" class="item-foto">
                         </picture>
-                        <h4>20 TRANSFER PRO 2GR MONODOSE</h4>
-                        <p>R$30,00</p>
-                        <button>adicionar ao carrinho</button>
+                        <h4>20 TRANSFER PRO 2GR MONODOSE<br><strong>R$30,00</strong></h4>
+                        <button class="add-carrinho"><img src="./icons/carrinho-branco.png" alt="adicionar ao carrinho" class="carrinho-branco"></button>
                     </li>
                     <li class="item-catalogo">
                         <picture>
                             <source media="(min-width: 750px)" srcset="./imagens/vasi-pro-150ml-m.png" type="image/png">
                             <img src="./imagens/vasi-pro-150ml-p.png" alt="vaselina vasi pro 150gr" class="item-foto">
                         </picture>
-                        <h4>VASELINA VASIPRO 150GR</h4>
-                        <p>R$25,00</p>
-                        <button>adicionar ao carrinho</button>
+                        <h4>VASELINA VASIPRO 150GR<br><strong>R$25,00</strong></h4>
+                        <button class="add-carrinho"><img src="./icons/carrinho-branco.png" alt="adicionar ao carrinho" class="carrinho-branco"></button>
                     </li>
                     <li class="item-catalogo">
                         <picture>
                             <source media="(min-width: 750px)" srcset="./imagens/vasi-pro-420gr-m.png" type="image/png">
                             <img src="./imagens/vasi-pro-420gr-p.png" alt="vaselina vasi pro 240gr" class="item-foto">
                         </picture>
-                        <h4>VASELINA VASIPRO 420GR</h4>
-                        <p>R$45,00</p>
-                        <button>adicionar ao carrinho</button>
+                        <h4>VASELINA VASIPRO 420GR<br><strong>R$45,00</strong></h4>
+                        <button class="add-carrinho"><img src="./icons/carrinho-branco.png" alt="adicionar ao carrinho" class="carrinho-branco"></button>
                     </li>
                     <li class="item-catalogo">
                         <picture>
                             <source media="(min-width: 750px)" srcset="./imagens/vasi-pro-5gr-m.png" type="image/png">
                             <img src="./imagens/vasi-pro-5gr-p.png" alt="20 saches vaselina vasi pro pro 2gr" class="item-foto">
                         </picture>
-                        <h4>20 VASIPRO 5GR MONODOSE</h4>
-                        <p>R$35,00</p>
-                        <button>adicionar ao carrinho</button>
+                        <h4>20 VASIPRO 5GR MONODOSE<br><strong>R$35,00</strong></h4>
+                        <button class="add-carrinho"><img src="./icons/carrinho-branco.png" alt="adicionar ao carrinho" class="carrinho-branco"></button>
                     </li>
                     <li class="item-catalogo">
                         <picture>
                             <source media="(min-width: 750px)" srcset="./imagens/decal-pro-m.png" type="image/png">
                             <img src="./imagens/decal-pro-p.png" alt="removedor de decalque decal pro 240ml" class="item-foto">
                         </picture>
-                        <h4>REMOVEDOR DE DECALQUE DECALPRO 240 ML</h4>
-                        <p>R$35,00</p>
-                        <button>adicionar ao carrinho</button>
+                        <h4>REMOVEDOR DE DECALQUE DECALPRO 240 ML<br><strong>R$35,00</strong></h4>
+                        <button class="add-carrinho"><img src="./icons/carrinho-branco.png" alt="adicionar ao carrinho" class="carrinho-branco"></button>
                     </li>
                     <li class="item-catalogo">
                         <picture>
                             <source media="(min-width: 750px)" srcset="./imagens/clear-tattoo-m.png" type="image/png">
                             <img src="./imagens/clear-tattoo-p.png" alt="clean tattoo pro 150ml" class="item-foto">
                         </picture>
-                        <h4>CLEAN TATTOO PRO 150ML</h4>
-                        <p>R$25,00</p>
-                        <button>adicionar ao carrinho</button>
+                        <h4>CLEAN TATTOO PRO 150ML<br><strong>R$25,00</strong></h4>
+                        <button class="add-carrinho"><img src="./icons/carrinho-branco.png" alt="adicionar ao carrinho" class="carrinho-branco"></button>
                     </li>
                     <li class="item-catalogo">
                         <picture>
                             <source media="(min-width: 750px)" srcset="./imagens/filem-pvc-12cm-m.png" type="image/png">
                             <img src="./imagens/filem-pvc-12cm-p.png" alt="filme pvc 12cm por 60m" class="item-foto">
                         </picture>
-                        <h4>FILME PVC 12CM X 60M</h4>
-                        <p>R$11,00</p>
-                        <button>adicionar ao carrinho</button>
+                        <h4>FILME PVC 12CM X 60M<br><strong>R$11,00</strong></h4>
+                        <button class="add-carrinho"><img src="./icons/carrinho-branco.png" alt="adicionar ao carrinho" class="carrinho-branco"></button>
                     </li>
                     <li class="item-catalogo">
                         <picture>
                             <source media="(min-width: 750px)" srcset="./imagens/filme-pvc-28cm-m.png" type="image/png">
                             <img src="./imagens/filme-pvc-28cm-p.png" alt="filme pvc 28cm por 100m" class="item-foto">
                         </picture>
-                        <h4>FILME PVC 28CM X 100M</h4>
-                        <p>R$15,00</p>
-                        <button>adicionar ao carrinho</button>
+                        <h4>FILME PVC 28CM X 100M<br><strong>R$15,00</strong></h4>
+                        <button class="add-carrinho"><img src="./icons/carrinho-branco.png" alt="adicionar ao carrinho" class="carrinho-branco"></button>
                     </li>
                     <li class="item-catalogo">
                         <picture>
                             <source media="(min-width: 750px)" srcset="./imagens/bandagem-preta-m.png" type="image/png">
                             <img src="./imagens/bandagem-preta-p.png" alt="bandagem preta" class="item-foto">
                         </picture>
-                        <h4>BANDAGEM PRETA</h4>
-                        <p>R$7,00</p>
-                        <button>adicionar ao carrinho</button>
+                        <h4>BANDAGEM PRETA<br><strong>R$7,00</strong></h4>
+                        <button class="add-carrinho"><img src="./icons/carrinho-branco.png" alt="adicionar ao carrinho" class="carrinho-branco"></button>
                     </li>
                     <li class="item-catalogo">
                         <picture>
                             <source media="(min-width: 750px)" srcset="./imagens/aparelho-barbear-m.png" type="image/png">
                             <img src="./imagens/aparelho-barbear-p.png" alt="imagem aparelho de barbear" class="item-foto">
                         </picture>
-                        <h4>APARELHO DE BARBEAR GOODMAX ARTPIG 5 UNIDADES</h4>
-                        <p>R$11,00</p>
-                        <button>adicionar ao carrinho</button>
+                        <h4>APARELHO DE BARBEAR GOODMAX ARTPIG 5 UNIDADES<br><strong>R$11,00</strong></h4>
+                        <button class="add-carrinho"><img src="./icons/carrinho-branco.png" alt="adicionar ao carrinho" class="carrinho-branco"></button>
                     </li>
                 </ul>
             </div>
         </section>
     </main>
-    <footer>
-        <div>
-            <a href="#">Canais de Atendimento</a>
-            <a href="#">Politica de Trocas e Devoluções</a>
-            <a href="#">Prazos e Entregas</a>
+    <footer class="rodape">
+        <div class="rodape-container">
+            <a href="#" class="rodape-ancora"><hover><strong>Canais de Atendimento</strong></hover></a>
+            <a href="#" class="rodape-ancora"><hover><strong>Politica de Trocas e Devoluções</strong></hover></a>
+            <a href="#" class="rodape-ancora"><hover><strong>Prazos e Entregas</strong></hover></a>
         </div>
-        <div>
+        <div class="rodape-container">
             <h4>Redes Sociais</h4>
-            <a href="#"><img src="./icons/whatsapp.png" alt="whatsapp-logo">Whatsapp</a>
-            <a href="#"><img src="./icons/facebook.png" alt="facebook-logo">Facebook</a>
-            <a href="#"><img src="./icons/instagram.png" alt="instagram-logo">Instagram</a>
+            <a href="#" class="rodape-ancora"><img src="./icons/whatsapp.png" alt="whatsapp-logo" class="icones" id="whats"><hover>Whatsapp</hover></a>
+            <a href="#" class="rodape-ancora"><img src="./icons/facebook.png" alt="facebook-logo" class="icones"a id="face"><hover>Facebook</hover></a>
+            <a href="#" class="rodape-ancora"><img src="./icons/instagram.png" alt="instagram-logo" class="icones" id="insta"><hover>Instagram</hover></a>
         </div>
     </footer>
 </body>
