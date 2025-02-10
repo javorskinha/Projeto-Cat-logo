@@ -17,6 +17,7 @@
     border: 3px;
     padding-top: 15px;
     padding-bottom: 20px;
+    position: relative;
 }
 
 .titulo {
@@ -27,7 +28,8 @@
 .pesquisa{
     border-radius: 15px;
     border: solid 2px;
-    border-color: #61677A;
+    background: #61677A url("./icons/lupa.png") no-repeat;
+    background-position: center right;
     background-color: #D8D9DA;
     padding: 8px;
 }
@@ -35,7 +37,6 @@
 .pesquisa ::placeholder {
     font-size: 14px;
     color: #61677A;
-    background: url("./icons/lupa.png") no-repeat;
     text-align: center;
     font-family: var(--fonte-base);
 }
@@ -43,6 +44,7 @@
 .icones {
     width: 35px;
     height: 35px;
+    margin: 10px;
 }
 
 a#carrinho {display: none;}
@@ -51,13 +53,15 @@ a#login {display: none;}
 .cabecalho-sessao {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    align-items: center;
 }
 
 .cabecalho-sessao-acesso {
+    position: absolute;
+    bottom: 0;
+    right: 0;
     display: flex;
     flex-direction: row;
-    align-items: center;
 }
 
 .titulo-pesquisa {
@@ -75,6 +79,7 @@ a#login {display: none;}
     padding: 5px;
     justify-content: space-around;
     font-family: var(--fonte-base);
+    width: 100%;
 }
 
 /* main */
@@ -86,6 +91,38 @@ a#login {display: none;}
     margin: 15px;
     border-radius: 10px;
     background-color: #D8D9DA;
+    position: relative;
+}
+
+.banner-texto {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin: 15px;
+    font-family: var(--fonte-base);
+}
+
+.banner-texto-button {
+    background-color: #000;
+    color: #fff;
+    width: 100%;
+    border-radius: 3px;
+    border: none;
+    padding: 4px;
+}
+
+.banner-texto-button :hover{
+    color: #FFB22C;
+}
+
+.banner-marcador {
+    width: 13vw;
+    height: 13vw;
+    position: absolute;
+    top: 15px;
+    left: 25px;
 }
 
 /* catalogo */
@@ -118,6 +155,8 @@ a#login {display: none;}
     background-color: #000;
     color: #fff;
     width: 100%;
+    border-radius: 3px;
+    border: none;
 }
 
 .carrinho-branco {
@@ -130,14 +169,20 @@ a#login {display: none;}
 .rodape {
     display: flex;
     font-family: var(--fonte-base);
-    font-size: 3.5vw;
+    font-size: 2,5vw;
     align-items: center;
+    justify-content: space-around;
 }
 
 .rodape-container {
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
     justify-content: space-between;
+}
+
+.redes-sociais {
+    align-items: center;
+    margin-top: 10px;
 }
 
 .rodape-ancora {
