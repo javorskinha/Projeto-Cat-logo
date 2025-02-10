@@ -1,0 +1,38 @@
+.banner {
+    display: flex;
+    margin: 15px;
+    border-radius: 10px;
+    background-color: #D8D9DA;
+    position: relative;
+}
+
+.banner-texto {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin: 15px;
+    font-family: var(--fonte-base);
+}
+
+.banner-texto-button {
+    background-color: #000;
+    color: #fff;
+    width: 100%;
+    border-radius: 3px;
+    border: none;
+    padding: 4px;
+}
+
+.banner-texto-button :hover{
+    color: #FFB22C;
+}
+
+.banner-marcador {
+    width: 13vw;
+    height: 13vw;
+    position: absolute;
+    top: 15px;
+    left: 25px;
+}

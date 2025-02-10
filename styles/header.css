@@ -1,0 +1,70 @@
+.cabecalho {
+    display: flex;
+    justify-content: space-around;
+    border: 3px;
+    padding-top: 15px;
+    padding-bottom: 20px;
+    position: relative;
+}
+
+.titulo {
+    font-size: 25px;
+    padding-bottom: 8px;
+}
+
+.pesquisa{
+    border-radius: 15px;
+    border: solid 2px;
+    background: #61677A url("../icons/lupa.png") no-repeat;
+    background-position: center right;
+    background-color: #D8D9DA;
+    padding: 8px;
+}
+
+.pesquisa ::placeholder {
+    font-size: 14px;
+    color: #61677A;
+    text-align: center;
+    font-family: var(--fonte-base);
+}
+
+.icones {
+    width: 35px;
+    height: 35px;
+    margin: 10px;
+}
+
+a#carrinho {display: none;}
+a#login {display: none;}
+
+.cabecalho-sessao {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.cabecalho-sessao-acesso {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    display: flex;
+    flex-direction: row;
+}
+
+.titulo-pesquisa {
+    justify-content: space-between;
+}
+
+.login-carrinho {
+    display: flex;
+    align-items: baseline;
+    font-family: var(--fonte-base);
+}
+.navegacao {
+    display: flex;
+    text-shadow: none;
+    padding: 5px;
+    justify-content: space-around;
+    font-family: var(--fonte-base);
+    width: 100%;
+}

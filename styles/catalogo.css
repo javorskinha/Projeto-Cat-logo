@@ -1,0 +1,36 @@
+.catalogo {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+}
+
+.item-catalogo {
+    font-family: var(--fonte-itens);
+    margin: 20px;
+    text-align: center;
+    width: 130px;
+    height: 190px;
+    font-size: 12px;
+}
+
+.item-foto {
+    background-color: #fff;
+    width: 110px;
+    height: 110px;
+}
+
+.add-carrinho {
+    background-color: #000;
+    color: #fff;
+    width: 100%;
+    border-radius: 3px;
+    border: none;
+}
+
+.carrinho-branco {
+    width: 20px;
+    height: 20px;
+}

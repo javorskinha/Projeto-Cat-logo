@@ -1,0 +1,26 @@
+.rodape {
+    display: flex;
+    font-family: var(--fonte-base);
+    font-size: 2,5vw;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.rodape-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.redes-sociais {
+    align-items: center;
+    margin-top: 10px;
+}
+
+.rodape-ancora {
+    padding: 1vw;
+}
+
+img#whats {display: none;}
+img#face {display: none;}
+img#insta {display: none;}
