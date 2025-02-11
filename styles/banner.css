@@ -37,7 +37,22 @@
     left: 25px;
 }
 
-@media screen and (min-width: 1024px){
-    
+@media screen and (min-width: 750px) and (max-width: 1024px){
+    .banner{
+        margin: 5vw;
+    }
+
+    #lancamento{
+        width: 550px;
+    }
+
+    .banner-texto{
+        font-size: 3vw;
+    }
+
+    .banner-texto-button{
+        height: 45px;
+        font-size: 20px;
+    }
 }
 

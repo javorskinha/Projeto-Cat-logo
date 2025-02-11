@@ -35,7 +35,31 @@
     height: 20px;
 }
 
-@media screen and (min-width: 1024px){
-    
+@media screen and (min-width: 750px) and (max-width: 1024px){
+    .catalogo{
+        border-radius: 15px;
+        margin: 35px;
+        padding-bottom: 15px;
+    }
+
+    .item-catalogo {
+        width: 330px;
+        height: 390px;
+        font-size: 28px;
+    }
+
+    .item-foto{
+        width: 230px;
+        height: 230px;
+    }
+
+    .add-carrinho{
+        height: 50px;
+    }
+
+    .carrinho-branco{
+        width: 40px;
+        height: 40px;
+    }
 }
 

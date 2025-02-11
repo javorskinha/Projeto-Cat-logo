@@ -7,6 +7,8 @@
     position: relative;
 }
 
+img#logo-desktop{display: none;}
+
 .titulo {
     font-size: 25px;
     padding-bottom: 8px;
@@ -41,6 +43,7 @@ a#login {display: none;}
     display: flex;
     flex-direction: column;
     align-items: center;
+    color: #000;
 }
 
 .cabecalho-sessao-acesso {
@@ -60,6 +63,7 @@ a#login {display: none;}
     align-items: baseline;
     font-family: var(--fonte-base);
 }
+
 .navegacao {
     display: flex;
     text-shadow: none;
@@ -69,7 +73,11 @@ a#login {display: none;}
     width: 100%;
 }
 
-@media screen and (min-width: 1024px){
+a :hover {
+    color: #61677A;
+}
+
+@media screen and (min-width: 750px) and (max-width: 1024px){
     .titulo{
         font-size: 10vw;
     }
@@ -79,6 +87,68 @@ a#login {display: none;}
         padding: 15px;
         margin: 20px;
         font-size: 25px;
+    }
+
+    .icones {
+        width: 50px;
+        height: 50px;
+    }
+
+    .navegacao{
+        font-size: 3vw;
+    }
+}
+
+@media screen and (min-width: 1025px){
+    header{
+        background: #000 url("../imagens/background-header.jpg") no-repeat;
+        background-size: cover;
+        background-position: center center;
+    }
+
+    .cabecalho{
+        height: 400px;
+    }
+
+    .cabecalho-sessao{
+        justify-content: center;
+        padding: 2vw;
+    }
+
+    picture#logo-nome-lw{display: none;}
+    a#carrinho {display: block;}
+    a#login {display: block;}
+    img#logo-desktop{
+        display: block;
+        position: absolute;
+        left: 30px;
+    }
+
+    .titulo{
+        font-size: 6vw;
+        margin-left: 10vw;
+        margin-top: 8vw;
+    }
+
+    .pesquisa{
+        width: 70%;
+        padding: 13px 30px 13px 30px;
+        margin: 20px;
+        font-size: 25px;
+        border-radius: 30px;
+        background-position: 95% center;
+        background-color: transparent;
+        margin-left: 10vw;
+    }
+
+    .cabecalho-sessao-acesso{
+        font-family: var(--fonte-base);
+        font-size: 1.5vw;
+        align-items: center;
+    }
+
+    .navegacao{
+        font-size: 30px;
     }
 }
 
