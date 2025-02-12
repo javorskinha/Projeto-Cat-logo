@@ -10,6 +10,8 @@ a {
     justify-content: space-around;
 }
 
+img#logo-rodape{display: none;}
+
 .rodape-container {
     display: flex;
     flex-direction: column;
@@ -35,12 +37,24 @@ img#insta {display: none;}
 
 @media screen and (min-width: 750px) and (max-width: 1024px){
     .rodape{
-        font-size: 3vw;
+        font-size: 2vw;
     }
 
-    img#whats {display: block;}
-    img#face {display: block;}
-    img#insta {display: block;}
+    img#whats {
+        display: block;
+        width: 27px;
+        height: 27px;
+    }
+    img#face {
+        display: block;
+        width: 27px;
+        height: 27px;
+    }
+    img#insta {
+        display: block;
+        width: 27px;
+        height: 27px;
+    }
 
     .rodape-ancora{
         display: flex;
@@ -48,4 +62,40 @@ img#insta {display: none;}
     }
 }
 
+@media screen and (min-width: 1025px){
+    .rodape{
+        font-size: 20px;
+        background-color: #D8D9DA;
+        position: relative;
+    }
+
+    img#logo-rodape{
+        position: absolute;
+        display: block;
+        left: 50%;
+        top: 20%;
+    }
+
+    img#whats {
+        display: block;
+        width: 27px;
+        height: 27px;
+    }
+    img#face {
+        display: block;
+        width: 27px;
+        height: 27px;
+    }
+    img#insta {
+        display: block;
+        width: 27px;
+        height: 27px;
+    }
+
+    .rodape-ancora{
+        display: flex;
+        align-items: center;
+        padding: 1px;
+    }
+}
 

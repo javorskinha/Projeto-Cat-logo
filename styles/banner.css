@@ -6,6 +6,10 @@
     position: relative;
 }
 
+img#logo-branco{
+    display: none;
+}
+
 .banner-texto {
     display: flex;
     flex-direction: column;
@@ -14,6 +18,7 @@
     padding-bottom: 20px;
     margin: 15px;
     font-family: var(--fonte-base);
+    font-size: 12px;
 }
 
 .banner-texto-button {
@@ -40,18 +45,71 @@
 @media screen and (min-width: 750px) and (max-width: 1024px){
     .banner{
         margin: 5vw;
+        padding: 2vw;
     }
 
-    #lancamento{
+    .banner-marcador{
+        display: none;
+    }
+
+    img#lancamento-foto{
         width: 550px;
     }
 
-    .banner-texto{
+    #lancamento{
         font-size: 3vw;
+        color: #be831c;
+    }
+
+    .banner-texto{
+        font-size: 25px;
     }
 
     .banner-texto-button{
         height: 45px;
+        font-size: 20px;
+    }
+}
+
+@media screen and (min-width: 1025px){
+    .banner{
+        margin: 20px;
+        width: 75%;
+        display: flex;
+        background-color: #000;
+        align-items: center;
+    }
+
+    img#logo-branco{
+        display: block;
+        width: 250px;
+        height: 264px;
+    }
+
+    img#lancamento-foto{
+        width: 500px;
+        height: 500px;
+    }
+
+    .banner-marcador{
+        display: none;
+    }
+
+    .banner-texto{
+        height: 300px;
+        justify-content: space-between;
+        color: #D8D9DA;
+        font-size: 22px;
+    }
+
+    #lancamento{
+        color: #FFB22C;
+    }
+
+    .banner-texto-button{
+        color: #000;
+        background-color: #e4ee579a;
+        padding: 10px;
         font-size: 20px;
     }
 }
