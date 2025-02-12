@@ -71,10 +71,13 @@
     }
 
     .item-catalogo{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
         width: 250px;
-        height: 355px;
+        height: 400px;
         font-size: 20px;
-        padding-bottom: 15px;
+        padding-bottom: 15px; 
     }
 
     .item-foto{

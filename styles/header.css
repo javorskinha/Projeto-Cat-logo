@@ -17,7 +17,7 @@ img#logo-desktop{display: none;}
 .pesquisa{
     border-radius: 15px;
     border: solid 2px;
-    background: #61677A url("../icons/lupa.png") no-repeat;
+    background: url("../icons/lupa.png") no-repeat;
     background-position: center right;
     background-color: #D8D9DA;
     padding: 8px;
@@ -25,7 +25,6 @@ img#logo-desktop{display: none;}
 
 .pesquisa ::placeholder {
     font-size: 14px;
-    color: #61677A;
     text-align: center;
     font-family: var(--fonte-base);
 }
@@ -135,9 +134,10 @@ a :hover {
         padding: 13px 30px 13px 30px;
         margin: 20px;
         font-size: 25px;
+        color: #000;
         border-radius: 30px;
         background-position: 95% center;
-        background-color: transparent;
+        background-color: #1414149a;
         margin-left: 10vw;
     }
 
@@ -148,6 +148,7 @@ a :hover {
     }
 
     .navegacao{
+        font-family: var(--fonte-secundaria);
         font-size: 30px;
     }
 }

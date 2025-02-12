@@ -1,6 +1,6 @@
 @charset "UTF-8";
 
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible+Next:ital,wght@0,200..800;1,200..800&family=Lexend+Deca:wght@100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
 @import url("./styles/header.css");
 @import url("./styles/banner.css");
@@ -8,8 +8,9 @@
 @import url("./styles/footer.css");
 
 :root {
-    --fonte-itens: "Roboto", serif;
+    --fonte-itens: "Atkinson Hyperlegible Next", serif;
     --fonte-base: "Montserrat", serif;
+    --fonte-secundaria: "Lexend Deca", serif;
 }
 
 body {
