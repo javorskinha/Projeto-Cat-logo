@@ -1,0 +1,102 @@
+main{
+    width: 100%;
+}
+
+.cadastro{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 70%;
+    margin: 20px;
+    padding: 25px;
+    background-color: #fff;
+    border-radius: 25px;
+}
+
+.cadastro-cabecalho{
+    font-family: var(--fonte-secundaria);
+}
+
+.cadastro-cabecalho-titulo{
+    display: flex;
+    justify-content: center;
+    font-size: 25px;
+    margin-bottom: 20px;
+}
+
+.formulario{
+    display: flex;
+    flex-direction: column;
+    font-family: var(--fonte-base);
+    align-items: center;
+}
+
+input{
+    border-left: none;
+    border-right: none;
+    border-top: none;
+    border-bottom: solid 3px #61677A;
+}
+
+#enviar{
+    display: flex;
+    justify-content: center;
+    margin: 10px;
+    padding: 5px;
+    width: 110px;
+    border: solid 2PX #FFB22C;
+    border-radius: 8px;
+    background-color: #000;
+    color: #D8D9DA;
+}
+
+.cadastro-texto {
+    display: flex;
+    flex-direction: column;
+}
+
+.cadastro-dado{
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+}
+
+.cadastro-checkbox{
+    display: flex;
+    flex-direction: row;
+}
+
+#receber-email{
+    font-size: 13px;
+}
+
+#fazer-login{
+    display: flex;
+    justify-content: center;
+    width: 110px;
+    padding: 5px;
+    margin-top: 10px;
+    border: solid 2PX #FFB22C;
+    border-radius: 8px;
+    background-color: #000;
+    color: #D8D9DA;
+}
+
+@media screen and (min-width: 750px) and (max-width: 1024px){
+    .cadastro{
+        width: 50%;
+    }
+}
+
+@media screen and (min-width: 1025px){
+    .header-cadastro{
+        background-color: #fff;
+    }
+
+    .cadastro{
+        width: 50%;
+    }
+}
+
+

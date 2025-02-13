@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Line Work Cadastro</title>
+</head>
+<body>
+    <header>
+        <section class="cabecalho">
+            <img src="./imagens/logo-desktop.png" alt="logo line work para desktop" id="logo-desktop">
+            <div class="cabecalho-sessao">
+                <picture id="logo-nome-lw">
+                    <source media="(min-width: 750px)" srcset="./imagens/line-work-tablet.png" type="image/png">
+                    <img src="./imagens/line-work-mobile.png" alt="logo line work supply">
+                </picture>
+                <h1 class="titulo">Tattoo Supply</h1>
+            </div>
+            <div class="cabecalho-sessao cabecalho-sessao-acesso">
+                <div class="login-carrinho">
+                    <a href="./index.html" class="area-cadastro">
+                        <strong>Voltar para loja</strong>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </header>
+    <main>
+        <div class="cadastro">
+            <div class="cadastro-cabecalho">
+                <h2 class="cadastro-cabecalho-titulo">Cadastre-se</h2>
+                <p>Preencha os campos abaixo</p>
+            </div>
+            <form action="#" class="formulario">
+                <fieldset class="cadastro-area">
+                    <div class="cadastro-dado cadastro-texto">
+                        <label for="nome" class="nome-dado"><strong>Nome completo</strong></label>
+                        <input type="text" required class="nome-dado">
+                    </div>
+                    <div class="cadastro-dado cadastro-texto">
+                        <label for="documento" class="nome-dado"><strong>CPF ou CNPJ</strong></label>
+                        <input type="text" required class="nome-dado">
+                    </div>
+                    <div class="cadastro-dado cadastro-checkbox">
+                        <label for="input"><strong>Sou</strong></label>
+                        <input type="checkbox">Logista</input>
+                        <input type="checkbox">Tatuador</input>
+                    </div>
+                    <div class="cadastro-dado">
+                        <label for="select"><strong>Compras</strong></label>
+                        <select name="selecione" id="">
+                            <option value="">selecione</option>
+                            <option value="">Atacado</option>
+                            <option value="">varejo</option>
+                        </select>
+                    </div>
+                </fieldset>
+                <fieldset class="cadastro-area">
+                    <div class="cadastro-dado">
+                        <label for="Telefone"><strong>Telefone</strong></label>
+                        <input type="tel" required>
+                    </div>
+                    <div class="cadastro-dado">
+                        <label for="E-mail"><strong>E-mail</strong></label>
+                        <input type="email" required>
+                    </div>
+                    <div class="cadastro-dado">
+                        <label for="senha"><strong>Senha</strong></label>
+                        <input type="password" required>
+                    </div>
+                </fieldset>
+                <div id="receber-email">
+                    <label for="checkbox">Receber novidades por e-mail</label>
+                    <input type="checkbox">
+                </div>
+                <input type="submit" id="enviar"></input>
+            </form>
+            <p>Já tem uma conta?</p>
+            <a href="" class="ancora"><button id="fazer-login">Login</button></a>
+        </section>
+    </main>
+    <footer class="rodape">
+        <img src="./imagens/logo-lw-rodape.png" alt="logo line work" id="logo-rodape">
+        <div class="rodape-container">
+            <a href="#" class="rodape-ancora"><hover><strong>Canais de Atendimento</strong></hover></a>
+            <a href="#" class="rodape-ancora"><hover><strong>Politica de Trocas e Devoluções</strong></hover></a>
+            <a href="#" class="rodape-ancora"><hover><strong>Prazos e Entregas</strong></hover></a>
+        </div>
+        <div class="rodape-container redes-sociais">
+            <h4>Redes Sociais</h4>
+            <a href="#" class="rodape-ancora"><img src="./icons/whatsapp.png" alt="whatsapp-logo" class="icones" id="whats"><hover>Whatsapp</hover></a>
+            <a href="#" class="rodape-ancora"><img src="./icons/facebook.png" alt="facebook-logo" class="icones"a id="face"><hover>Facebook</hover></a>
+            <a href="#" class="rodape-ancora"><img src="./icons/instagram.png" alt="instagram-logo" class="icones" id="insta"><hover>Instagram</hover></a>
+        </div>
+    </footer>
+</body>
+</html>
