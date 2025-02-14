@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./icons/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="style.css">
     <title>Line Work Cadastro</title>
@@ -33,47 +34,47 @@
                 <h2 class="cadastro-cabecalho-titulo">Cadastre-se</h2>
                 <p>Preencha os campos abaixo</p>
             </div>
-            <form action="#" class="formulario">
+            <form action="cadastro.js" class="formulario">
                 <fieldset class="cadastro-area">
                     <div class="cadastro-dado cadastro-texto">
                         <label for="nome" class="nome-dado"><strong>Nome completo</strong></label>
-                        <input type="text" required class="nome-dado">
+                        <input type="text" id="nome" required class="nome-dado">
                     </div>
                     <div class="cadastro-dado cadastro-texto">
                         <label for="documento" class="nome-dado"><strong>CPF ou CNPJ</strong></label>
-                        <input type="text" required class="nome-dado">
+                        <input type="text" id="documento" required class="nome-dado">
                     </div>
                     <div class="cadastro-dado cadastro-checkbox">
-                        <label for="input"><strong>Sou</strong></label>
-                        <input type="checkbox">Logista</input>
-                        <input type="checkbox">Tatuador</input>
+                        <label for="logista tatuador"><strong>Sou</strong></label>
+                        <input type="checkbox" id="logista">Logista</input>
+                        <input type="checkbox" id="tatuador">Tatuador</input>
                     </div>
                     <div class="cadastro-dado">
-                        <label for="select"><strong>Compras</strong></label>
-                        <select name="selecione" id="">
-                            <option value="">selecione</option>
-                            <option value="">Atacado</option>
-                            <option value="">varejo</option>
+                        <label for="tipo-compra"><strong>Compras</strong></label>
+                        <select name="selecione" id="tipo-compra">
+                            <option value="#">selecione</option>
+                            <option value="#">Atacado</option>
+                            <option value="#">varejo</option>
                         </select>
                     </div>
                 </fieldset>
                 <fieldset class="cadastro-area">
                     <div class="cadastro-dado">
-                        <label for="Telefone"><strong>Telefone</strong></label>
-                        <input type="tel" required>
+                        <label for="telefone"><strong>Telefone</strong></label>
+                        <input type="tel" id="telefone" required>
                     </div>
                     <div class="cadastro-dado">
-                        <label for="E-mail"><strong>E-mail</strong></label>
-                        <input type="email" required>
+                        <label for="email"><strong>E-mail</strong></label>
+                        <input type="email" id="email" required>
                     </div>
                     <div class="cadastro-dado">
                         <label for="senha"><strong>Senha</strong></label>
-                        <input type="password" required>
+                        <input type="password" id="senha" required>
                     </div>
                 </fieldset>
                 <div id="receber-email">
-                    <label for="checkbox">Receber novidades por e-mail</label>
-                    <input type="checkbox">
+                    <label for="enviar-emails">Receber novidades por e-mail</label>
+                    <input type="checkbox" id="enviar-emails">
                 </div>
                 <input type="submit" id="enviar"></input>
             </form>

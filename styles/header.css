@@ -115,12 +115,17 @@ a :hover {
     }
 
     picture#logo-nome-lw{display: none;}
-    p#carrinho {display: block;}
+    p#carrinho {display: block; margin: 15px;}
     p#login {display: block;}
     img#logo-desktop{
         display: block;
         position: absolute;
         left: 30px;
+    }
+
+    .login-carrinho-nome{
+        display: flex;
+        align-items: baseline;
     }
 
     .titulo{
