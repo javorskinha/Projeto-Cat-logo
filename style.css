@@ -7,6 +7,7 @@
 @import url("./styles/catalogo.css");
 @import url("./styles/footer.css");
 @import url("./styles/cadastro.css");
+@import url("./styles/carrossel.css");
 
 :root {
     --fonte-itens: "Atkinson Hyperlegible Next", serif;
