@@ -10,13 +10,14 @@
 .item-catalogo {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    align-items: baseline;
     font-family: var(--fonte-itens);
     margin: 20px;
     text-align: center;
     width: 130px;
-    height: 210px;
+    height: 250px;
     font-size: 12px;
+    justify-content: space-between;
 }
 
 .item-foto {
@@ -25,9 +26,12 @@
     height: 110px;
 }
 
+.item-catalogo div{
+    width: 100%;
+}
+
 .valor{
-    font-size: 2vw;
-    margin-bottom: 5px;
+    font-size: 100%;
 }
 
 .add-carrinho {
@@ -36,6 +40,8 @@
     width: 100%;
     border-radius: 3px;
     border: none;
+    height: 30px;
+    margin-top: 10px;
 }
 
 .carrinho-branco {

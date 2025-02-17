@@ -1,57 +1,59 @@
-.carrossel{
-    display: block;
-    height: 293px;
-    width: 600px;
-    margin: auto;
-    margin-top: 20px;
+.container{
+    padding: 2rem;
+  }
+  
+  .carrossel{
     position: relative;
-}
-
-.carrossel li{
-    list-style: none;
-    position: absolute;
-
-}
-
-.carrossel img{
-    margin: auto;
-    height: 100%;
-    width: 100%;
-    vertical-align: top;
-    opacity: 0;
-    visibility: hidden;
-}
-
-.carrossel input{
+    max-width:30rem;
+    margin: 0 auto;
+  }
+  
+  .fotos{
+    display: flex;
+    aspect-ratio: 16/9;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+  }
+  
+  ::-webkit-scrollbar{
     display: none;
-}
-
-.carrossel label{
-    background-color: #000;
-    bottom: 10px;
-    cursor: pointer;
-    display: block;
-    height: 10px;
+  }
+  
+  .fotos img{
+    flex: 1 0 100%;
+    scroll-snap-align: start;
+    object-fit: cover;
+  }
+  
+  .fotos-nav{
+    display: flex;
+    column-gap: 1rem;
     position: absolute;
-    width: 10px;
-    z-index: 10;
-}
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
+  }
+  
+  .fotos-nav a{
+    width: 0.5rem;
+    height: 0.5rem;
+    border-radius: 50%;
+    background-color: #fff;
+  }
+  
+  .fotos-nav a:hover{
+    background-color: #61677A;
+  }
 
-.carrossel li:nth-child(1) label{
-    left: 10px;
-}
+  @media screen and (min-width: 750px) and (max-width: 1024px){
+    .carrossel{
+        max-width: 45rem;
+    }
+  }
 
-.carrossel li:nth-child(2) label{
-    left: 40px;
-}
-
-.carrossel li:nth-child(3) label{
-    left: 70px;
-}
-
-.carrossel li input:checked~img {
-    opacity: 1;
-    visibility: visible;
-    z-index: 10;
-}
-
+  @media screen and (min-width: 1025px){
+    .carrossel{
+        max-width: 60rem;
+    }
+  }

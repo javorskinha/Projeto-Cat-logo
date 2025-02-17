@@ -34,7 +34,7 @@ img#logo-branco{
     color: #FFB22C;
 }
 
-.banner-marcador {
+img#banner-marcador {
     width: 13vw;
     height: 13vw;
     position: absolute;
@@ -48,7 +48,7 @@ img#logo-branco{
         padding: 2vw;
     }
 
-    .banner-marcador{
+    img#banner-marcador{
         display: none;
     }
 
@@ -91,7 +91,7 @@ img#logo-branco{
         height: 500px;
     }
 
-    .banner-marcador{
+    img#banner-marcador{
         display: none;
     }
 

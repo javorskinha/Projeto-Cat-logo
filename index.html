@@ -18,14 +18,14 @@
                     <img src="./imagens/line-work-mobile.png" alt="logo line work supply">
                 </picture>
                 <h1 class="titulo">Tattoo Supply</h1>
-                <input class="pesquisa" type="search" placeholder="Pesquisa">
+                <input type="search" placeholder="Pesquisa" class="pesquisa">
             </div>
             <div class="cabecalho-sessao cabecalho-sessao-acesso">
                 <div class="login-carrinho">
-                    <a href="#" class="login-carrinho-nome"><img class="icones" src="./icons/carrinho.png" alt="carrinho de compras"><p id="carrinho"><strong>Carrinho</strong></p></a>
+                    <a href="#" target="_self" rel="next" class="login-carrinho-nome"><img class="icones" src="./icons/carrinho.png" alt="carrinho de compras"><p id="carrinho"><strong>Carrinho</strong></p></a>
                 </div>
                 <div class="login-carrinho">
-                    <a href="./cadastro.html" class="login-carrinho-nome">
+                    <a href="./cadastro.html" target="_self" rel="next" class="login-carrinho-nome">
                         <img class="icones" src="./icons/usuario.png" alt="area de login">
                         <p id="login"><strong>Login</strong></p>
                     </a>
@@ -34,34 +34,31 @@
         </section>
         <section class="cabecalho-sessao">
             <nav class="navegacao">
-                <a href="#">Categorias</a>
-                <a href="#">Novidades</a>
-                <a href="#">Ofertas</a>
-                <a href="#">Cupons</a>
+                <a href="#" target="_self" rel="next">Categorias</a>
+                <a href="#" target="_self" rel="next">Novidades</a>
+                <a href="#" target="_self" rel="next">Ofertas</a>
+                <a href="#" target="_self" rel="next">Cupons</a>
             </nav>
         </section>
     </header>
     <main>
+        <section class="container">
+            <div class="carrossel">
+                <div class="fotos">
+                    <img id="foto-1" src="./imagens/1.jpg" alt="cartuchos steel pro de alta performance"/>
+                    <img id="foto-2" src="./imagens/2.jpg" alt="cartuchos steel filter de alto desempenho"/>
+                    <img id="foto-3" src="./imagens/3.jpg" alt="lançamento cartuchos steel dragon"/>
+                </div>
+            </div>
+            <div class="fotos-nav">
+                <a href="#foto-1"></a>
+                <a href="#foto-2"></a>
+                <a href="#foto-3"></a>
+            </div>
+        </section>
         <section class="banner">
-            <ul class="carrossel">
-                <li>
-                    <input type="radio" id="foto-1" nome="foto" checked>
-                    <label for="foto-1"></label>
-                    <img src="./imagens/1.jpg" alt="banner steel pro">
-                </li>
-                <li>
-                    <input type="radio" id="foto-2" nome="foto" checked>
-                    <label for="foto-2"></label>
-                    <img src="./imagens/2.jpg" alt="banner steel filter">
-                </li>
-                <li>
-                    <input type="radio" id="foto-3" nome="foto" checked>
-                    <label for="foto-3"></label>
-                    <img src="./imagens/3.jpg" alt="banner steel dragon">
-                </li>
-            </ul>
-            <!--<img src="./imagens/line-work-logo-white.png" alt="logo line work" id="logo-branco">
-            <img src="./icons/novo-icon.png" alt="marcador-lançamento" class="banner-marcador">
+            <img src="./imagens/line-work-logo-white.png" alt="logo line work" id="logo-branco">
+            <img src="./icons/novo-icon.png" alt="marcador-lançamento" id="banner-marcador">
             <picture>
                 <source media="(min-width: 750px)" srcset="./imagens/steel-dragon-m.png" type="image/png">
                 <img src="./imagens/steel-dragon-p.png" alt="imagem aparelho de barbear" id="lancamento-foto">
@@ -70,7 +67,7 @@
                 <h2 id="lancamento"><strong>LANÇAMENTO</strong></h2>
                 <p>Suporte em silicone para os dedos, ponta chanfrada diamont para um fluxo perfeito, membrana de alta qualidade e agulhas em aço cirúrgico 316L.</p>
                 <button class="banner-texto-button"><hover>ADICIONAR AO CARRINHO</hover></button>
-            </div>-->
+            </div>
         </section>
         <section>
             <div>
@@ -83,8 +80,8 @@
                         <h4>CARTUCHOS STEEL FILTER 20 UNIDADES</h4>
                         <div>
                             <p class="valor"><strong>R$150,00</strong></p>
-                            <button class="add-carrinho"><img src="./icons/carrinho-branco.png" alt="adicionar ao carrinho" class="carrinho-branco">
-                        </button></div>
+                            <button class="add-carrinho"><img src="./icons/carrinho-branco.png" alt="adicionar ao carrinho" class="carrinho-branco"></button>
+                        </div>
                     </li>
                     <li class="item-catalogo">
                         <picture>
@@ -94,8 +91,8 @@
                         <h4>BIG STEEL FILTER 10 UNIDADE - 45RM</h4>
                         <div>
                             <p class="valor"><strong>R$110,00</strong></p>
-                            <button class="add-carrinho"><img src="./icons/carrinho-branco.png" alt="adicionar ao carrinho" class="carrinho-branco">
-                        </button></div>
+                            <button class="add-carrinho"><img src="./icons/carrinho-branco.png" alt="adicionar ao carrinho" class="carrinho-branco"></button>
+                        </div>
                     </li>
                     <li class="item-catalogo">
                         <picture>
@@ -111,7 +108,7 @@
                     <li class="item-catalogo">
                         <picture>
                             <source media="(min-width: 750px)" srcset="./imagens/steel-dragon-m.png" type="image/png">
-                            <img src="./imagens/steel-dragon-p.png" alt="imagem aparelho de barbear" class="item-foto">
+                            <img src="./imagens/steel-dragon-p.png" alt="cartucho steel dragon" class="item-foto">
                         </picture>
                         <h4>CARTUCHOS STEEL DRAGON 20 UNIDADES</h4>
                         <div>
@@ -135,7 +132,7 @@
                             <source media="(min-width: 750px)" srcset="./imagens/protect-pro-filme-m.png" type="image/png">
                             <img src="./imagens/protect-pro-filme-p.png" alt="filme curativo protect pro 5cm por 5m" class="item-foto">
                         </picture>
-                        <h4>PROTECT PRO FILME CURATIVO 5CM X 5M/h4>
+                        <h4>PROTECT PRO FILME CURATIVO 5CM X 5M</h4>
                         <div>
                             <p class="valor"><strong>R$50,00</strong></p>
                             <button class="add-carrinho"><img src="./icons/carrinho-branco.png" alt="adicionar ao carrinho" class="carrinho-branco"></button>
@@ -280,15 +277,15 @@
     <footer class="rodape">
         <img src="./imagens/logo-lw-rodape.png" alt="logo line work" id="logo-rodape">
         <div class="rodape-container">
-            <a href="#" class="rodape-ancora"><hover><strong>Canais de Atendimento</strong></hover></a>
-            <a href="#" class="rodape-ancora"><hover><strong>Politica de Trocas e Devoluções</strong></hover></a>
-            <a href="#" class="rodape-ancora"><hover><strong>Prazos e Entregas</strong></hover></a>
+            <a href="#" target="_self" rel="next" class="rodape-ancora"><hover><strong>Canais de Atendimento</strong></hover></a>
+            <a href="#" target="_self" rel="next" class="rodape-ancora"><hover><strong>Politica de Trocas e Devoluções</strong></hover></a>
+            <a href="#" target="_self" rel="next" class="rodape-ancora"><hover><strong>Prazos e Entregas</strong></hover></a>
         </div>
         <div class="rodape-container redes-sociais">
             <h4>Redes Sociais</h4>
-            <a href="#" class="rodape-ancora"><img src="./icons/whatsapp.png" alt="whatsapp-logo" class="icones" id="whats"><hover>Whatsapp</hover></a>
-            <a href="#" class="rodape-ancora"><img src="./icons/facebook.png" alt="facebook-logo" class="icones"a id="face"><hover>Facebook</hover></a>
-            <a href="#" class="rodape-ancora"><img src="./icons/instagram.png" alt="instagram-logo" class="icones" id="insta"><hover>Instagram</hover></a>
+            <a href="#" target="_blank" rel="external" class="rodape-ancora"><img src="./icons/whatsapp.png" alt="whatsapp-logo" class="icones" id="whats"><hover>Whatsapp</hover></a>
+            <a href="#" target="_blank" rel="external" class="rodape-ancora"><img src="./icons/facebook.png" alt="facebook-logo" class="icones"a id="face"><hover>Facebook</hover></a>
+            <a href="#" target="_blank" rel="external" class="rodape-ancora"><img src="./icons/instagram.png" alt="instagram-logo" class="icones" id="insta"><hover>Instagram</hover></a>
         </div>
     </footer>
 </body>
