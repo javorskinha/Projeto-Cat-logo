@@ -19,6 +19,7 @@ img#logo-branco{
     margin: 15px;
     font-family: var(--fonte-base);
     font-size: 12px;
+    text-align: justify;
 }
 
 .banner-texto-button {
